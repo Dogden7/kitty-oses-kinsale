@@ -1,6 +1,6 @@
 # Kitty Ó Sé’s — Kinsale
 
-A responsive static website for the pub, with food and live music photographs, customer review, directions and contact details.
+A responsive static website with food and music photographs, an accessible photo viewer, a clearly labelled demo menu, directions and contact details.
 
 ## Preview
 
