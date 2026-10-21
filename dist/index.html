@@ -12,6 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="site.js" defer></script>
+  <script src="facebook.js" defer></script>
+  <link rel="stylesheet" href="facebook.css">
 </head>
 <body id="home">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -42,9 +44,32 @@
           <p class="eyebrow">Music</p><h2 id="music-title">Live Irish music.</h2>
           <figure class="customer-review"><blockquote><p class="review-title">“Never a dull night”</p><p>“Great place for live traditional music. You can always find live music and a cold pint.”</p></blockquote><figcaption><a href="https://www.tripadvisor.ie/Restaurant_Review-g211878-d4026730-Reviews-Kitty_O_Se_s-Kinsale_County_Cork.html" target="_blank" rel="noopener noreferrer">Customer review · Tripadvisor <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></figcaption></figure>
           <p class="music-schedule">Music every night from March to November, with fewer sessions over winter.</p>
-          <a class="text-link" href="https://www.facebook.com/kittykinsale/" target="_blank" rel="noopener noreferrer">Latest music times on Facebook <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
+          <a class="text-link" href="#updates">See the latest updates <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
         </div>
         <figure class="session-photo"><button class="photo-button" type="button" data-photo="4" aria-label="Enlarge photograph of a session in the bar"><img src="assets/live-session.jpg" alt="A traditional session with guitarists, a fiddle player and customers gathered around" width="1600" height="900" loading="lazy"><span class="photo-expand" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span></button><figcaption>A session in the bar</figcaption></figure>
+      </div>
+    </section>
+    <section class="updates-section section-width" id="updates" aria-labelledby="updates-title">
+      <div class="updates-copy">
+        <p class="eyebrow">Latest updates</p>
+        <h2 id="updates-title">What’s on.</h2>
+        <p>Music nights and news from the pub, shared on Facebook.</p>
+        <a class="directions" href="https://www.facebook.com/kittykinsale/" target="_blank" rel="noopener noreferrer">Open Facebook <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
+      </div>
+      <div class="facebook-panel">
+        <div class="facebook-placeholder">
+          <p class="eyebrow">From Facebook</p>
+          <h3>Recent posts.</h3>
+          <p>See the latest updates from the bar.</p>
+          <button class="directions facebook-load" type="button" aria-controls="facebook-feed" aria-expanded="false" hidden>Show Facebook posts</button>
+          <p class="facebook-privacy">Posts load from Facebook when you choose to show them. Facebook may use cookies.</p>
+          <noscript><p><a class="text-link" href="https://www.facebook.com/kittykinsale/" target="_blank" rel="noopener noreferrer">View recent posts on Facebook <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></p></noscript>
+        </div>
+        <div class="facebook-feed" id="facebook-feed" hidden></div>
+        <div class="facebook-tools" hidden>
+          <p>If posts don’t appear, <a href="https://www.facebook.com/kittykinsale/" target="_blank" rel="noopener noreferrer">view them on Facebook</a>. Facebook may ask you to sign in.</p>
+          <button class="facebook-hide" type="button">Hide posts</button>
+        </div>
       </div>
     </section>
     <section class="visit-section section-width" id="visit" aria-labelledby="visit-title">
