@@ -1,19 +1,4 @@
-.updates-section { padding-block:80px; display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:10%; align-items:center; border-bottom:1px solid var(--line); }
-.updates-copy h2 { margin-bottom:24px; }
-.updates-copy > p:not(.eyebrow) { color:var(--muted); max-width:32ch; }
-.facebook-panel { width:100%; max-width:540px; min-width:0; justify-self:end; background:#2b2420; border:1px solid var(--line); padding:19px; }
-.facebook-panel [hidden] { display:none !important; }
-.facebook-placeholder { padding:28px 15px; }
-.facebook-placeholder .eyebrow { margin-bottom:16px; }
-.facebook-placeholder h3 { margin:0 0 16px; font:400 36px/1.1 var(--serif); }
-.facebook-placeholder > p:not(.eyebrow) { color:var(--muted); font-size:14px; }
-.facebook-load { color:var(--paper); background:transparent; cursor:pointer; text-align:left; }
-.facebook-placeholder .facebook-privacy { font-size:11px; line-height:1.8; margin-top:22px; max-width:34ch; }
-.facebook-feed { width:100%; height:620px; background:#fff; overflow:hidden; }
-.facebook-feed iframe { display:block; border:0; max-width:100%; height:620px; }
-.facebook-tools { padding-top:15px; display:flex; flex-direction:column; gap:6px; }
-.facebook-tools p { color:var(--muted); font-size:12px; line-height:1.8; }
-.facebook-tools a { text-decoration:underline; text-underline-offset:3px; }
-.facebook-hide { align-self:flex-start; min-height:44px; padding:0 8px 0 0; border:0; background:transparent; color:var(--gold); cursor:pointer; font-size:12px; text-decoration:underline; text-underline-offset:4px; }
+.updates-section { padding-block:64px; display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:10%; align-items:center; border-bottom:1px solid var(--line); }
+.updates-copy > p { color:var(--muted); max-width:38ch; }
 @media(max-width:1000px) { .updates-section { gap:6%; } }
-@media(max-width:650px) { .updates-section { grid-template-columns:minmax(0,1fr); padding-block:52px; gap:30px; } .facebook-panel { justify-self:start; padding:15px; } .facebook-placeholder { padding:22px 6px; } .updates-copy > p:not(.eyebrow) { font-size:15px; } }
+@media(max-width:650px) { .updates-section { grid-template-columns:minmax(0,1fr); padding-block:44px; gap:22px; } .updates-copy > p { font-size:15px; } }
