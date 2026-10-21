@@ -16,8 +16,8 @@ Create a Render Static Site connected to this repository on branch `main`.
 
 No dependencies, database or secrets are required. Confirm business details and photo permissions with the pub before commercial handover.
 
-## Facebook demonstration
+## Facebook feed preview
 
-`facebook-demo.html` is a clearly labelled interactive walkthrough for the pub team. Page selection, the connected-by identity and the feed layout are simulated. It does not contact Facebook, collect credentials or import real posts.
+The homepage’s What’s on section contains three clearly labelled illustrative Facebook-style posts using existing website photographs and sample captions. These are not real Facebook posts, and Like/Comment/Share are visual examples rather than live controls. The separate `facebook-demo.html` URL redirects directly to this preview.
 
-The public website links directly to the pub's Facebook Page. Its 18+ login restriction prevented the basic public timeline embed from showing posts, so the empty iframe was removed. A real automatic feed still needs a Page-manager-authorised integration, with provider support for the Page's restrictions confirmed before launch.
+The pub’s Facebook Page requires an 18+ login, which prevented its basic public timeline embed from displaying posts. A real automatic feed needs a Page-manager-authorised integration, with provider support for the Page’s restrictions confirmed before launch.
