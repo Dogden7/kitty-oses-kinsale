@@ -172,3 +172,21 @@ address span { color:var(--muted); font-size:14px; }
   html { scroll-behavior:auto; }
   *,*::before,*::after { transition:none !important; }
 }
+
+/* Desktop opening: keep the introduction beside the photograph. */
+@media (min-width:651px) {
+  .page-width { max-width:1320px; }
+  .site-header { min-height:92px; }
+  .opening { display:grid; grid-template-columns:.85fr 1.5fr; min-height:0; }
+  .opening-copy { position:relative; grid-column:1; grid-row:1; width:auto; min-width:0; padding:38px 32px; display:flex; flex-direction:column; justify-content:center; border-top:0; border-left:2px solid var(--gold); }
+  .opening-photo { position:relative; inset:auto; grid-column:2; grid-row:1; z-index:auto; height:clamp(390px,37vw,510px); min-width:0; }
+  .opening-photo img { object-position:65% center; }
+  .opening h1 { font-size:clamp(32px,4.6vw,64px); line-height:1.08; margin-bottom:24px; max-width:none; }
+  .opening-copy .eyebrow { font-size:10px; letter-spacing:.14em; margin-bottom:20px; }
+  .opening .intro { font-size:15px; line-height:1.75; max-width:30ch; }
+  .food-section { padding-top:72px; }
+}
+@media (min-width:651px) and (max-width:1000px) {
+  .opening-copy { padding:28px 24px; }
+  .opening .intro { font-size:14px; }
+}
