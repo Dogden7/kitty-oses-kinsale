@@ -21,3 +21,7 @@ No dependencies, database or secrets are required. Confirm business details and 
 The homepage’s What’s on section contains three clearly labelled illustrative Facebook-style posts using existing website photographs and sample captions. These are not real Facebook posts, and Like/Comment/Share are visual examples rather than live controls. The separate `facebook-demo.html` URL redirects directly to this preview.
 
 The pub’s Facebook Page requires an 18+ login, which prevented its basic public timeline embed from displaying posts. A real automatic feed needs a Page-manager-authorised integration, with provider support for the Page’s restrictions confirmed before launch.
+
+## Design reference
+
+Design D (`design-d.html`) uses broad cues from the owner-supplied Killarney restaurant reference: a teal/light palette, serif lettering and a food-first emphasis. The HTML, CSS, composition and copy are independently authored for Kinsale. No Killarney source code, logo, photography, awards, menu items or other site assets are included. All photographs are the existing Kinsale site assets. The live homepage is unchanged; `designs.html` compares the four previews.
