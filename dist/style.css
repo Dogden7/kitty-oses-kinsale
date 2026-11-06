@@ -70,6 +70,10 @@ figcaption { color:var(--muted); font-size:12px; margin-top:13px; }
 address { font-style:normal; font-size:18px; line-height:1.8; }
 address span { color:var(--muted); font-size:14px; }
 .directions { display:inline-flex; align-items:center; justify-content:space-between; gap:32px; min-height:46px; border:1px solid #c7a87c77; padding:8px 17px; font-size:13px; margin-top:23px; transition:background .2s,color .2s; }
+.opening-actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:22px; }
+.opening-actions .directions { margin:0; padding-inline:12px; }
+.opening-primary { background:var(--gold); color:var(--background); }
+.opening-primary:hover { background:var(--paper); color:var(--background); }
 .directions:hover { background:var(--gold); color:var(--background); }
 .contact-block { border-left:1px solid var(--line); padding-left:30px; }
 .contact-block .eyebrow { margin-bottom:15px; }
@@ -118,11 +122,11 @@ address span { color:var(--muted); font-size:14px; }
   nav { gap:20px; }
   nav a { font-size:12px; }
   .opening { min-height:0; }
-  .opening-photo { position:relative; height:290px; }
+  .opening-photo { position:relative; height:clamp(200px,62vw,285px); }
   .opening-photo img { object-position:70% center; }
   .opening-copy { position:relative; width:100%; padding:23px 24px 26px; }
   .opening-copy .eyebrow { font-size:10px; margin-bottom:13px; }
-  h1 { font-size:clamp(38px,10.5vw,52px); max-width:none; margin-bottom:14px; }
+  h1 { font-size:clamp(35px,9vw,48px); max-width:none; margin-bottom:14px; }
   .intro { font-size:15px; line-height:1.65; max-width:35ch; }
   h2 { font-size:46px; }
   .eyebrow { margin-bottom:15px; }
@@ -162,7 +166,6 @@ address span { color:var(--muted); font-size:14px; }
 @media (max-width:360px) {
   .brand { font-size:24px; }
   nav { gap:15px; }
-  .opening-photo { height:250px; }
   .opening-copy { padding-inline:20px; }
   h1 { font-size:36px; }
   .food-seafood .photo-button,.food-stew .photo-button { height:175px; }
@@ -177,11 +180,11 @@ address span { color:var(--muted); font-size:14px; }
 @media (min-width:651px) {
   .page-width { max-width:1320px; }
   .site-header { min-height:92px; }
-  .opening { display:grid; grid-template-columns:.85fr 1.5fr; min-height:0; }
+  .opening { display:grid; grid-template-columns:1fr 1.35fr; min-height:0; }
   .opening-copy { position:relative; grid-column:1; grid-row:1; width:auto; min-width:0; padding:38px 32px; display:flex; flex-direction:column; justify-content:center; border-top:0; border-left:2px solid var(--gold); }
-  .opening-photo { position:relative; inset:auto; grid-column:2; grid-row:1; z-index:auto; height:clamp(390px,37vw,510px); min-width:0; }
-  .opening-photo img { object-position:65% center; }
-  .opening h1 { font-size:clamp(32px,4.6vw,64px); line-height:1.08; margin-bottom:24px; max-width:none; }
+  .opening-photo { position:relative; inset:auto; grid-column:2; grid-row:1; z-index:auto; min-height:clamp(390px,37vw,510px); min-width:0; }
+  .opening-photo img { position:absolute; inset:0; object-position:65% center; }
+  .opening h1 { font-size:clamp(32px,4.2vw,60px); line-height:1.02; margin-bottom:24px; max-width:none; }
   .opening-copy .eyebrow { font-size:10px; letter-spacing:.14em; margin-bottom:20px; }
   .opening .intro { font-size:15px; line-height:1.75; max-width:30ch; }
   .food-section { padding-top:72px; }
