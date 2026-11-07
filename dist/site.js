@@ -36,6 +36,27 @@
     document.body.classList.remove('photo-open');
     opener?.focus({ preventScroll: true });
   });
+  const feed = document.querySelector('#facebook-posts');
+  const feedControls = document.querySelector('.fb-carousel-controls');
+  if (feed && feedControls) {
+    const [previous, next] = feedControls.querySelectorAll('button');
+    const updateControls = () => {
+      previous.disabled = feed.scrollLeft <= 1;
+      next.disabled = feed.scrollLeft >= feed.scrollWidth - feed.clientWidth - 1;
+    };
+    feedControls.addEventListener('click', event => {
+      const direction = Number(event.target.closest('button')?.dataset.feedDirection);
+      if (!direction) return;
+      const [first, second] = feed.children;
+      const step = second.offsetLeft - first.offsetLeft;
+      const behavior = matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+      feed.scrollBy({ left: direction * step, behavior });
+    });
+    feed.addEventListener('scroll', updateControls, { passive: true });
+    window.addEventListener('resize', updateControls);
+    feedControls.hidden = false;
+    updateControls();
+  }
   if ('IntersectionObserver' in window) {
     const links = [...document.querySelectorAll('nav a')];
     const observer = new IntersectionObserver(entries => {

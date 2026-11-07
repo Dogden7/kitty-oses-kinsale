@@ -70,10 +70,6 @@ figcaption { color:var(--muted); font-size:12px; margin-top:13px; }
 address { font-style:normal; font-size:18px; line-height:1.8; }
 address span { color:var(--muted); font-size:14px; }
 .directions { display:inline-flex; align-items:center; justify-content:space-between; gap:32px; min-height:46px; border:1px solid #c7a87c77; padding:8px 17px; font-size:13px; margin-top:23px; transition:background .2s,color .2s; }
-.opening-actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:22px; }
-.opening-actions .directions { margin:0; padding-inline:12px; }
-.opening-primary { background:var(--gold); color:var(--background); }
-.opening-primary:hover { background:var(--paper); color:var(--background); }
 .directions:hover { background:var(--gold); color:var(--background); }
 .contact-block { border-left:1px solid var(--line); padding-left:30px; }
 .contact-block .eyebrow { margin-bottom:15px; }

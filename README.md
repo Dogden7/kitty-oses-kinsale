@@ -18,7 +18,7 @@ No dependencies, database or secrets are required. Confirm business details and 
 
 ## Facebook feed preview
 
-The homepage’s What’s on section shows three curated highlights from supplied Facebook screenshots. The cards are static. The Facebook link takes visitors to the Page for current updates. The separate `facebook-demo.html` URL redirects to this section.
+The homepage’s What’s on section shows six selected Facebook posts in a horizontal carousel, with five Facebook photo files and a screenshot linked to the original music reel. The cards are static. The Facebook link takes visitors to the Page for current updates. The separate `facebook-demo.html` URL redirects to this section.
 
 The pub’s Facebook Page requires an 18+ login, which prevented its basic public timeline embed from displaying posts. A real automatic feed needs a Page-manager-authorised integration, with provider support for the Page’s restrictions confirmed before launch.
 
