@@ -1,0 +1,7 @@
+.demo-styles { display:flex; align-items:center; justify-content:space-between; gap:8px 20px; padding:5px max(16px,calc((100vw - 1240px)/2)); background:#151c1b; color:#fff; font:12px/1.4 Arial,sans-serif; }
+.demo-styles>span { color:#b9ccc8; white-space:nowrap; }
+.demo-styles>div { display:flex; gap:6px 18px; flex-wrap:wrap; }
+.demo-styles a { display:flex; align-items:center; min-height:36px; padding:4px 0; color:inherit; border-bottom:2px solid transparent; text-decoration:none; }
+.demo-styles a:hover,.demo-styles a[aria-current] { color:#b8e7dc; border-bottom-color:#b8e7dc; }
+.demo-styles a:focus-visible { outline:2px solid #fff; outline-offset:3px; }
+@media(max-width:520px) { .demo-styles { align-items:flex-start; flex-direction:column; padding:8px 16px; gap:2px; } .demo-styles>div { width:100%; justify-content:space-between; gap:10px; } .demo-styles a { min-height:40px; font-size:11px; } }

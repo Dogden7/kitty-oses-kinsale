@@ -1,0 +1,64 @@
+:root { --background:#f8efe1; --paper:#33251d; --muted:#6e5749; --gold:#9c3d24; --wine:#e9d6bd; --line:#57392340; }
+body { background:var(--background); }
+.site-header { min-height:112px; border-bottom:2px solid var(--paper); }
+.brand { font:600 29px/1.1 var(--sans); text-transform:uppercase; letter-spacing:-.05em; }
+.brand span { font:500 9px/1.4 var(--sans); letter-spacing:.22em; margin-top:8px; }
+.site-header nav a { font-size:13px; font-weight:600; }
+h2 { font-family:var(--sans); font-weight:600; letter-spacing:-.06em; font-size:clamp(44px,5.2vw,72px); }
+.opening { display:grid; grid-template-columns:1.1fr 1fr; gap:35px; padding-block:55px 65px; min-height:0; }
+.opening-copy { position:static; padding:20px 0; border:0; width:auto; display:block; background:transparent; }
+.opening-copy .eyebrow { font-size:11px; letter-spacing:.1em; margin-bottom:27px; }
+.opening h1 { font:600 clamp(42px,5.3vw,78px)/1.04 var(--sans); letter-spacing:-.065em; max-width:none; margin-bottom:24px; }
+.opening h1 em { font-family:var(--serif); font-weight:400; letter-spacing:-.035em; color:var(--gold); }
+.opening .intro { color:var(--muted); max-width:38ch; font-size:16px; line-height:1.7; }
+.social-jump { display:inline-flex; justify-content:space-between; gap:40px; margin-top:25px; min-height:48px; align-items:center; border-bottom:2px solid var(--paper); font-size:13px; font-weight:600; }
+.opening-photo { position:relative; grid-column:2; grid-row:1; inset:auto; height:560px; min-height:0; overflow:visible; z-index:auto; }
+.opening-photo>img:first-child { position:absolute; width:78%; height:88%; right:0; left:auto; top:0; border-radius:140px 140px 8px 8px; object-position:center; }
+.opening-photo .social-food { position:absolute; width:49%; height:47%; bottom:0; left:0; top:auto; border:8px solid var(--background); border-radius:50% 50% 12px 12px; object-position:center 65%; transform:rotate(-7deg); }
+.social-stamp { position:absolute; bottom:8px; right:0; width:150px; padding:16px 12px; background:#a64327; color:#fff6e5; text-align:center; font:400 24px/1.05 var(--serif); transform:rotate(6deg); border-radius:50%; }
+.social-band { display:flex; justify-content:space-around; gap:20px; padding:22px; background:#a64327; color:#fff6e5; font:600 13px/1.3 var(--sans); text-transform:uppercase; letter-spacing:.08em; }
+.food-section { padding-block:90px; }
+.section-intro { grid-template-columns:1.1fr 1fr; gap:60px; align-items:center; }
+.food-gallery { gap:22px; align-items:start; grid-template-columns:repeat(3,minmax(0,1fr)); }
+.food-feature .photo-button,.food-seafood .photo-button,.food-stew .photo-button { height:350px; border-radius:16px; }
+.food-feature { grid-column:auto; }
+.directions { border-color:var(--gold); background:var(--gold); color:#fff6e5; border-radius:4px; }
+.directions:hover { background:#74301d; color:white; }
+.music-section { padding-block:80px; background:#e9d6bd; border:0; }
+.music-copy h2 { font-family:var(--sans); font-weight:600; letter-spacing:-.06em; font-size:clamp(44px,4.5vw,64px); }
+.music-photo .photo-button { border-radius:160px 160px 12px 12px; }
+.customer-review blockquote p+p { color:var(--muted); }
+.customer-review { border-left:2px solid var(--gold); }
+.photo-expand { background:var(--paper); color:#fff6e5; }
+.fb-carousel-button { color:var(--paper); border-color:var(--paper); }
+.updates-section { padding-block:80px; }
+.fb-post { border-radius:12px; border-color:#cab39b; }
+.visit-section { border-top:2px solid var(--paper); margin-top:45px; padding-block:65px; }
+.phone { font-family:var(--sans); font-weight:600; letter-spacing:-.04em; }
+.photo-dialog { color:#f2eadd; }
+@media(max-width:1000px) and (min-width:761px) { .opening-photo { height:480px; } .social-stamp { width:130px; font-size:21px; } }
+@media(max-width:760px) {
+  .site-header { min-height:92px; gap:18px; }
+  .brand { font-size:25px; }
+  .site-header nav { gap:18px; }
+  .opening { display:flex; flex-direction:column; gap:20px; padding-block:36px 45px; }
+  .opening-copy { padding:0; }
+  .opening h1 { font-size:clamp(43px,10.8vw,64px); }
+  .opening-copy .eyebrow { margin-bottom:20px; }
+  .opening-photo { width:100%; height:430px; }
+  .opening-photo>img:first-child { width:76%; height:90%; }
+  .opening-photo .social-food { width:48%; height:48%; }
+  .social-stamp { width:136px; bottom:6px; font-size:21px; }
+  .social-band { flex-direction:column; text-align:center; gap:10px; font-size:11px; }
+  .section-intro { grid-template-columns:1fr; gap:24px; }
+  .food-section { padding-block:55px; }
+  .food-gallery { grid-template-columns:1fr; gap:26px; }
+  .food-feature .photo-button,.food-seafood .photo-button,.food-stew .photo-button { height:300px; }
+  .music-section { padding-block:55px; }
+  .music-photo .photo-button { min-height:0; height:auto; aspect-ratio:4 / 5; }
+  .visit-section { padding-block:50px; }
+  .updates-section { padding-block:50px; }
+}
+@media(max-width:360px) { .brand { font-size:22px; } .site-header nav { gap:13px; } .opening-photo { height:370px; } .social-stamp { width:120px; font-size:19px; } }
+
+.fb-avatar { background:#9c3d24; color:#fff6e5; }

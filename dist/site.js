@@ -58,7 +58,7 @@
     updateControls();
   }
   if ('IntersectionObserver' in window) {
-    const links = [...document.querySelectorAll('nav a')];
+    const links = [...document.querySelectorAll('nav[aria-label="Main navigation"] a')];
     const observer = new IntersectionObserver(entries => {
       for (const entry of entries) {
         if (entry.isIntersecting) {
